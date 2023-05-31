@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+
+    <!-- Referência ao jQuery -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        
+    <!-- Referência aos arquivos de validação do jQuery Validate -->
+    <script src="jquery.validate.js"></script>
+        
+    <!-- Referência aos arquivos de máscara do jQuery Mask -->
+    <script src="jquery.mask.js"></script>
+        
+    <!-- Referência ao seu arquivo de script personalizado -->
+</head>
+
+<!--Fontes-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+
+<body>
+    <div class="Principal">
+        <div class="Esquerda">
+            <div class="Conteudo">
+                <div class="Titulo1"><h1>DATA SETUP</h1></div>
+                <img src="PC.png">
+
+            </div>
+        </div>
+        
+        <div class="Direita">
+            <div id="Form" class="Form">
+                <div class="Titulo2"><h2>PREENCHA AS INFORMAÇÕES:</h2></div>
+                
+                <div class="container">
+                    <div class="campo";>
+                        <label style="font-size:30px;";>Nome</label><br>
+                        <input id="Nome" maxlength="45" 
+                        onkeyup="preventNumberInput(event)" onkeydown="preventNumberInput(event)" placeholder="Nome Completo" />
+                    </div>
+
+                    <div class="campo">
+                        <label style="font-size:30px;">Email</label><br>
+                        <input placeholder="E-mail" id="Email" >
+                    </div>
+
+                    <div class="campo">
+                        <label style="font-size:30px;">Telefone</label><br>
+                        <input maxlength="13" id="Telefone" type="text" placeholder="(xx)xxxxx-xxxx" >
+                    </div>
+
+                    <div class="campo">
+                        <label style="font-size:30px;">Cpf</label><br>
+                        <input maxlength="14" placeholder="xxx.xxx.xxx-xx" type="text" id="Cpf">
+                    </div>
+
+                    <div class="campo">
+                        <label style="font-size:30px;">Endereço Completo</label><br>
+                        <input maxlength="150" placeholder="150 caracteres permitidos" type="text" id="Endereco">
+                    </div>
+
+                    <div class="campo">
+                        <label style="font-size:30px;">Cep</label><br>
+                        <input id="Cep" type="text" placeholder="xxxxx-xxx">
+                    </div>
+
+                    <div class="button">
+                        <button type="submit" onclick="validar();return false" id="Button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

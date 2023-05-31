@@ -1,0 +1,102 @@
+    body {
+        font-family: 'Bruno Ace SC', cursive;
+        font-weight: 100;
+        color: black;
+        text-align: center;
+        background-size: auto;
+        color: white;
+        padding-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .Titulo1{
+        padding-top: 10%;
+        color: black;
+    }
+
+    .Titulo2{
+        color: rgb(255, 255, 255);
+    }
+
+    Button{
+        background-color: aliceblue;
+        cursor: pointer;
+    }
+    
+    .Principal {
+        display: flex;
+        background-color: transparent;
+        opacity: 0.9;
+    }
+    
+    .Esquerda {
+        flex: 1;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    .Esquerda:hover{
+        opacity: 0.9;
+
+        background-color: white;
+    }
+
+
+    
+    .Direita {
+        flex: 1;
+        background-color: transparent;
+        opacity: 0.9;
+        background-image: url(Background.jpg);
+        background-size: cover;
+    }
+
+    .Direita:hover{
+        
+        background-color: white;
+    }
+
+    
+    .Conteudo {
+        margin: 20px;
+    }
+    
+    .Form {
+        margin: 20px;
+    }
+    
+    .campo {
+        margin-bottom: 10px;
+    }
+
+    
+    .campo:hover{
+        background-color: rgb(255, 255, 255);
+        color: #000000;
+    }
+
+    
+    .campo input{
+        cursor: pointer;
+        box-sizing: border-box;
+        text-align: center;
+    
+    }
+
+    button {
+        font-family: 'Bruno Ace SC', cursive;
+    }
+
+    h1.font{
+        opacity: 1;
+    }
+    
+    @media (max-width: 768px) {
+        .Esquerda,
+        .Direita {
+        float: none;
+        width: 100%;
+        }
+    }
+    
